@@ -26,3 +26,12 @@ def view_doc():
 
 #-------------------------------------------------------
 
+#while loop
+def while_loop():
+    while True:
+        cmd = raw_input(">")
+        if cmd == "view doc":
+            view_doc()
+        if cmd == "make new doc":
+            make_new_doc()
+while_loop()
