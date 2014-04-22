@@ -10,6 +10,12 @@ import pickle
 #-------------------------------------------------------
 
 #Functions tab
+def help():
+    print("These are the available commands:")
+    print("make new doc")
+    print("view doc")
+    print("help")
+    print("bye")
 def make_new_doc():
     filename = raw_input("name =")
     filename = filename + ".pydoc"
@@ -34,4 +40,6 @@ def while_loop():
             view_doc()
         if cmd == "make new doc":
             make_new_doc()
+        if cmd == "help":
+            help()
 while_loop()
