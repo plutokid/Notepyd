@@ -9,6 +9,7 @@ import pickle
 
 #-------------------------------------------------------
 
+#Functions tab
 def make_new_doc():
     filename = raw_input("name =")
     filename = filename + ".pydoc"
@@ -16,5 +17,12 @@ def make_new_doc():
     additions = raw_input("")
     print("Saving file.")
     pickle.dump(additions, open(filename, "wb"))
+    print("File saved.")
+def view_doc():
+    filename = raw_input("name =")
+    filename = filename + ".pydoc"
+    view = pickle.load(open(filename, "rb"))
+    print(view)
 
 #-------------------------------------------------------
+
