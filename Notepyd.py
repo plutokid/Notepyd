@@ -5,7 +5,7 @@ This script is made by Tijndagamer and released under the MIT license.
 #-------------------------------------------------------
 
 #Imports and varia
-import pickle
+import pickle, sys
 
 #-------------------------------------------------------
 
@@ -42,4 +42,6 @@ def while_loop():
             make_new_doc()
         if cmd == "help":
             help()
+        if cmd == "bye":
+            sys.exit()
 while_loop()
