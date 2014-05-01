@@ -34,8 +34,10 @@ def view_doc():
 
 #while loop
 def while_loop():
+    print("Welcome to notepyd")
     while True:
-        cmd = raw_input(">")
+        command = raw_input(">")
+        cmd = command.lower()
         if cmd == "view doc":
             view_doc()
         if cmd == "make new doc":
